@@ -61,7 +61,7 @@ pip install opencv-python==4.6.0
 d. Clone the KDSampler repository.
 
 ```shell
-git clone https://github.com/isno0907/kdsampler
+git clone https://github.com/isno0907/sosampler
 ```
 
 e. Install build requirements and then install MMAction2.
