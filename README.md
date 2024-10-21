@@ -69,6 +69,27 @@ e. Install build requirements and then install MMAction2.
 ```shell
 pip install -v -e .  # or "python setup.py develop"
 ```
+## Data Preparation:
+Please refer to the default MMAction2 dataset setup to set datasets correctly.
+
+Specially, for ActivityNet dataset, we adopt the training annotation file with one label, since there are only 6 out of 10024 videos with more than one labels and these labels are similar. Owing to the different label mapping between MMAction2 and FrameExit in ActivityNet, we provide two kinds of annotation files. You can check it in data/ActivityNet/ and configs/activitynet_*.py.
+
+For Mini-Kinetics, please download Kinetics 400 and use the train/val splits file from AR-Net
+
+## Pretrained Models:
+Todo
+
+## Training:
+```
+# bash tools/dist_train.sh {CONFIG_FILE} {GPUS} {--validate}
+bash tools/dist_train.sh configs/activitynet/activitynet_so_resnet50_config.py 8 --validate
+```
+## Inference:
+
+```
+# bash tools/dist_test.sh {CONFIG_FILE} {CHECKPOINT} {GPUS} {--eval mean_average_precision / top_k_accuracy}
+bash tools/dist_test.sh configs/activitynet/activitynet_so_resnet50_config.py modelzoo/sosampler_anet_10to6_resnet50.pth 8 --eval mean_average_precision
+```
 
 ## Citation
 ```
