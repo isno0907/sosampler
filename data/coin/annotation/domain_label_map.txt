@@ -1,0 +1,12 @@
+Nursing_and_Care
+Vehicle
+Leisure_and_Performance
+Gadgets
+Electrical_Appliance
+Furniture_and_Decoration
+Science_and_Craft
+Pets_and_Fruit
+Drink_and_Snack
+Dish
+Sport
+Housework
