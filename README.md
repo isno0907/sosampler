@@ -72,7 +72,7 @@ pip install -v -e .  # or "python setup.py develop"
 ## Data Preparation:
 Please refer to the default MMAction2 dataset setup to set datasets correctly.
 
-Specially, for ActivityNet dataset, we adopt the training annotation file with one label, since there are only 6 out of 10024 videos with more than one labels and these labels are similar. Owing to the different label mapping between MMAction2 and FrameExit in ActivityNet, we provide two kinds of annotation files. You can check it in data/ActivityNet/ and configs/activitynet_*.py.
+Specially, for ActivityNet dataset, we adopt the training annotation file with one label, since there are only 6 out of 10024 videos with more than one labels and these labels are similar. Owing to the different label mapping between MMAction2 and FrameExit in ActivityNet, we provide two kinds of annotation files. You can check it in data/ActivityNet/ and configs/activitynet/*.py.
 
 For Mini-Kinetics, please download Kinetics 400 and use the train/val splits file from AR-Net
 
